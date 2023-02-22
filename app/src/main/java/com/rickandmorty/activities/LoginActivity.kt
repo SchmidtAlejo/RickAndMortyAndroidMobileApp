@@ -118,7 +118,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun getUserSetup()= dataStore.data.map { preferences ->
         UserSetup(
-            isLogged = preferences[booleanPreferencesKey("isLogged")]?:true,
+            isLogged = preferences[booleanPreferencesKey("isLogged")]?:false,
             isNightMode = preferences[booleanPreferencesKey("isNightMode")]?:false,
             isFirstTime = preferences[booleanPreferencesKey("isFirstTime")]?:true
         )
